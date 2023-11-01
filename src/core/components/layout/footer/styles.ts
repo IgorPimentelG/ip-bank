@@ -2,18 +2,16 @@ import { default as NextLink } from 'next/link';
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-	position: fixed;
+	position: absolute;
 	bottom: 0;
-	left: 0;
-	right: 0;
-
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 	padding: 100px 100px 50px 100px;
 	background-color: ${({ theme }) => theme.colors['grey-shades']['grey-11']};
+
 	img {
 		object-fit: cover;
 	}
@@ -35,6 +33,7 @@ export const ServiceWrapper = styled.div`
 	border: 1px solid rgba(179, 179, 179, 0.1);
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	border-radius: 50px;
+	margin-top: 12px;
 
 	& > div:nth-child(1),
 	& > div:nth-child(3) {
