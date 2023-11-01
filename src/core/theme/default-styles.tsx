@@ -22,6 +22,7 @@ export const DefaultStyles = createGlobalStyle`
 
 	a {
 		outline: none;
+		text-decoration: none;
 	}
 
 	button {

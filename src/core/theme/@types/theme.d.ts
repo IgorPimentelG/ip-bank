@@ -27,16 +27,16 @@ declare module 'styled-components' {
 			},
 
 			'grey-shades': {
-				'gray-10': string;
-				'gray-11': string;
-				'gray-15': string;
-				'gray-20': string;
-				'gray-30': string;
-				'gray-35': string;
-				'gray-40': string;
-				'gray-60': string;
-				'gray-70': string;
-				'gray-75': string;
+				'grey-10': string;
+				'grey-11': string;
+				'grey-15': string;
+				'grey-20': string;
+				'grey-30': string;
+				'grey-35': string;
+				'grey-40': string;
+				'grey-60': string;
+				'grey-70': string;
+				'grey-75': string;
 			}
 		}
 	}

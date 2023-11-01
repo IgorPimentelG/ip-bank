@@ -1,3 +1,4 @@
+import { Footer } from '@/core/components/layout';
 import { ThemeProvider } from '@/core/theme/theme-provider';
 import type { Metadata } from 'next';
 import { Lexend } from 'next/font/google';
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={lexend.className}>
 				<ThemeProvider>
 					{children}
+					<Footer />
 				</ThemeProvider>
 				</body>
     </html>

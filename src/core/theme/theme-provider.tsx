@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from 'react';
 import { DefaultTheme, ThemeProvider as Provider } from 'styled-components';
 import { DefaultStyles } from './default-styles';
@@ -33,16 +35,16 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
 			},
 
 			'grey-shades': {
-				'gray-10': '#191919',
-				'gray-11': '#1C1C1C',
-				'gray-15': '#262626',
-				'gray-20': '#333333',
-				'gray-30': '#4C4C4D',
-				'gray-35': '#59595A',
-				'gray-40': '#656567',
-				'gray-60': '#98989A',
-				'gray-70': '#B3B3B3',
-				'gray-75': '#BFBFBF',
+				'grey-10': '#191919',
+				'grey-11': '#1C1C1C',
+				'grey-15': '#262626',
+				'grey-20': '#333333',
+				'grey-30': '#4C4C4D',
+				'grey-35': '#59595A',
+				'grey-40': '#656567',
+				'grey-60': '#98989A',
+				'grey-70': '#B3B3B3',
+				'grey-75': '#BFBFBF',
 			}
 		}
 	};
