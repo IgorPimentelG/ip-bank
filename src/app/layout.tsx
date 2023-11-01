@@ -1,8 +1,9 @@
+import { ThemeProvider } from '@/core/theme/theme-provider';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Lexend } from 'next/font/google';
 import { ReactNode } from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
+const lexend = Lexend({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'IPBank',
@@ -12,7 +13,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lexend.className}>
+				<ThemeProvider>
+					{children}
+				</ThemeProvider>
+				</body>
     </html>
   );
 }
