@@ -9,6 +9,10 @@ export const Container = styled.button`
 	font-size: 16px;
 	background-color: ${({ theme }) => theme.colors['green-shades']['green-60']};
 
+	& > span {
+		white-space: nowrap;
+	}
+
 	&[data-style = 'SECONDARY'] {
 		${({ theme }) => `
 			color: ${theme.colors['absolute-colors'].white};

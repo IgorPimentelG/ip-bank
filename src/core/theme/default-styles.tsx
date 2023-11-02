@@ -9,7 +9,6 @@ export const DefaultStyles = createGlobalStyle`
 
 	html, body {
 		min-height: 100vh;
-		width: 100vw;
 	}
 
 	body {

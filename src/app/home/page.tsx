@@ -1,7 +1,9 @@
+import { HomeTemplate } from '@/core/templates';
+
 const Home = () => {
 	return (
 		<>
-			<span>Home page</span>
+			<HomeTemplate />
 		</>
 	);
 }

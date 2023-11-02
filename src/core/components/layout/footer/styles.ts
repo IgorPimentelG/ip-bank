@@ -2,8 +2,6 @@ import { default as NextLink } from 'next/link';
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-	position: absolute;
-	bottom: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
