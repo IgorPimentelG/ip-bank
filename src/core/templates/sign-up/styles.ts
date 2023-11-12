@@ -14,8 +14,8 @@ export const Card = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 70%;
-	padding: 88px 100px;
+	width: 60%;
+	padding: 88px 30px;
 	border-radius: 20px;
 	overflow: hidden;
 	border: 1px solid ${({ theme }) => theme.colors['grey-shades']['grey-15']};
@@ -30,10 +30,11 @@ export const Card = styled.div`
 	}
 
 	& > form {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		gap: 24px;
 		margin-top: 60px;
-		width: 100%;
+		width: 80%;
 		margin-bottom: 38px;
 	}
 
@@ -48,7 +49,7 @@ export const Card = styled.div`
 		}
 	}
 
-	& > div:nth-child(7) {
+	& > div:nth-child(6) {
 		display: flex;
 		align-items: center;
 		gap: 12px;
@@ -99,5 +100,7 @@ export const Title = styled.h1`
 
 export const Description = styled.span`
 	font-size: 14px;
+	text-align: center;
+	white-space: pre-line;
 	color: ${({ theme }) => theme.colors['grey-shades']['grey-75']};
 `;
