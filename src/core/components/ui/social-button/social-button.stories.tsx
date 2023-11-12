@@ -21,3 +21,11 @@ export const Default: Story = {
 		</SocialButton>
 	)
 }
+
+export const Highlighted: Story = {
+	render: (args) => (
+		<SocialButton {...args} style='HIGHLIGHTED'>
+			<BsFacebook />
+		</SocialButton>
+	)
+}

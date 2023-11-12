@@ -7,10 +7,20 @@ export const Container = styled.button`
 	padding: 12px 24px;
 	border-radius: 100px;
 	font-size: 16px;
+	width: 100%;
 	background-color: ${({ theme }) => theme.colors['green-shades']['green-60']};
 
 	& > span {
 		white-space: nowrap;
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	&[data-style = 'PRIMARY'] {
+		${({ theme }) => `
+			color: ${theme.colors['grey-shades']['grey-15']};
+			background-color: ${theme.colors['green-shades']['green-60']};
+		`};
 	}
 
 	&[data-style = 'SECONDARY'] {

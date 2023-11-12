@@ -20,7 +20,7 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
 				'green-60': '#CAFF33',
 				'green-65': '#D1FF4C',
 				'green-70': '#D8FF66',
-				'green-80': '#E5FF99',
+				'green-80': '#020202',
 				'green-90': '#F2FFCC',
 				'green-95': '#F8FFE5',
 				'green-97': '#FBFFF0',

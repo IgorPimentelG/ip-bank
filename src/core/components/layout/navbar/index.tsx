@@ -28,29 +28,29 @@ export const Navbar: FC = () => {
 				<nav>
 					<Button
 						label='Home'
-						styleType={isSelected('home')}
+						type={isSelected('home')}
 						action={() => router.push('/home')}
 					/>
 					<Button
 						label='Careers'
-						styleType={isSelected('careers')}
+						type={isSelected('careers')}
 						action={() => router.push('/careers')}
 					/>
 					<Button
 						label='About'
-						styleType={isSelected('about')}
+						type={isSelected('about')}
 						action={() => router.push('/about')}
 					/>
 					<Button
 						label='Security'
-						styleType={isSelected('security')}
+						type={isSelected('security')}
 						action={() => router.push('/security')}
 					/>
 				</nav>
 
 				<div>
-					<Button label='Sign Up' styleType='INLINE' action={() => {}} />
-					<Button label='Login' action={() => {}} />
+					<Button label='Sign Up' type='INLINE' action={() => router.push('/sign-up')} />
+					<Button label='Login' action={() => router.push('/sign-in')} />
 				</div>
 			</NavbarWrapper>
 		</Container>

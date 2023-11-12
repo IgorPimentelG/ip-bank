@@ -52,10 +52,11 @@ export const Infos = styled.div`
 		display: flex;
 		justify-content: center;
 		gap: 24px;
+		margin: 48px 0;
 	}
 
 	hr {
-		opacity: 0.1;
+		opacity: 0.8;
 		border: 1px solid ${({ theme }) => theme.colors['grey-shades']['grey-15']};
 	}
 `;

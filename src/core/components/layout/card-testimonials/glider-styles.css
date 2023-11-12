@@ -1,0 +1,32 @@
+.glider {
+	margin: 0 48px 0 68px;
+	height: 300px;
+}
+
+.glider-track {
+	display: flex;
+	align-items: stretch;
+	gap: 48px;
+}
+
+.glider-track > .visible:nth-child(1) {
+	position: relative;
+}
+
+.visible > div:first-child {
+	position: absolute;
+	left: 0;
+	top:  0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+.left-1 > div:first-child {
+	background: linear-gradient(270deg, rgba(25, 25, 25, 0.00) 0%, #191919 100%);
+}
+
+.right-1 > div:first-child {
+	background: linear-gradient(90deg, rgba(25, 25, 25, 0.00) 0%, #191919 100%);
+}
+

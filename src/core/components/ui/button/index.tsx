@@ -3,13 +3,13 @@ import { Container } from './styles';
 
 type Props = {
 	label: string;
-	styleType?: 'PRIMARY' | 'SECONDARY' | 'INLINE';
+	type?: 'PRIMARY' | 'SECONDARY' | 'INLINE';
 	action: () => void;
 }
 
-export const Button: FC<Props> = ({ label, action, styleType = 'PRIMARY' }) => {
+export const Button: FC<Props> = ({ label, action, type = 'PRIMARY' }) => {
 	return (
-		<Container onClick={action} data-style={styleType}>
+		<Container onClick={action} data-style={type}>
 			<span>{label}</span>
 		</Container>
 	);
